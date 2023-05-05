@@ -1,7 +1,12 @@
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 function App() {
-  return <>START PROJECT</>;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default App;

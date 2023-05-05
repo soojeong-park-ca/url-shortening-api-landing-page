@@ -1,0 +1,14 @@
+.snsLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+
+  margin-top: 2rem;
+}
+
+.snsLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -12,4 +12,12 @@
   --color-gray-2: hsl(257, 7%, 63%);
   --color-gray-3: hsl(255, 11%, 22%);
   --color-gray-4: hsl(260, 8%, 14%);
+
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
