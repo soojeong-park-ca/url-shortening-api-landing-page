@@ -20,3 +20,25 @@
   color: var(--color-white);
   font-weight: 600;
 }
+
+/* DESKTOP VERSION from 48em (768px) */
+@media screen and (min-width: 48em) {
+  .footerNav {
+    margin-top: 0;
+
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .footerNavItem {
+    align-items: start;
+  }
+}
+
+/* Screen width <= 300px */
+@media screen and (max-width: 18.75em) {
+  .footerNav {
+    margin-top: 2rem;
+  }
+}
