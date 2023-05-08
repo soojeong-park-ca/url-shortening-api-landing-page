@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Button from "../Button";
-import logo from '../../assets/images/logo.svg'
+import logoBlack from '../../assets/images/logo-black.svg'
 
 const Header = () => {
     let Links = [
@@ -11,10 +11,10 @@ const Header = () => {
     let [open, setOpen] = useState(false)
 
     return (
-        <header className="z-10 w-full fixed top-0 left-0">
+        <header className="z-10 w-full fixed top-0 left-0 bg-white">
             {/* nav is full width element  */}
             <nav className="md:flex md:justify-between items-center bg-white py-6 md:px-10 px-7 max-w-screen-lg mx-auto">
-                <a href="/"><img src={logo} alt="Logo" /></a>
+                <a href="/"><img src={logoBlack} alt="Logo" /></a>
 
                 {/* onClick toggles the menu on smaller screens */}
                 <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">

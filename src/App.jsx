@@ -1,13 +1,13 @@
 import Header from "./components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
+import HeadeBlankWidth from "./components/Header/HeadeBlankWidth";
 
 function App() {
   return (
     <>
-      <div className="w-11/12 mx-auto">
-        <Header />
-      </div>
+      <Header />
+      <HeadeBlankWidth />
       <Footer />
     </>
   );
