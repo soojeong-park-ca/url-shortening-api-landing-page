@@ -1,9 +1,9 @@
 import React from 'react'
 
-function HeadeBlankHeight() {
+function HeaderBlankHeight() {
     return (
         <div className="md:h-28 h-20 bg-white"></div>
     )
 }
 
-export default HeadeBlankHeight
+export default HeaderBlankHeight
