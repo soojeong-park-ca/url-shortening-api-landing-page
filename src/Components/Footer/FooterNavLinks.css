@@ -1,0 +1,19 @@
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.navListItem {
+  line-height: 2.2;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--color-gray-1);
+  text-transform: capitalize;
+  cursor: pointer;
+}

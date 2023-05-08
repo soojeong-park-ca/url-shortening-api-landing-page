@@ -5,6 +5,19 @@
 @tailwind utilities;
 
 html {
-	font-family: "Poppins", sans-serif;
-	-webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  --color-gray-1: hsl(0, 0%, 75%);
+  --color-gray-2: hsl(257, 7%, 63%);
+  --color-gray-3: hsl(255, 11%, 22%);
+  --color-gray-4: hsl(260, 8%, 14%);
+
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
