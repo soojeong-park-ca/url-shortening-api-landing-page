@@ -1,7 +1,12 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
-  return <>START PROJECT</>;
+  return (
+    <div className="w-11/12 mx-auto">
+      <Header />
+    </div>
+  )
 }
 
 export default App;
