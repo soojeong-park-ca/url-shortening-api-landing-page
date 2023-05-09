@@ -42,11 +42,13 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footerLogoBox">
-        <Logo />
+      <div className="footerBox">
+        <div className="footerLogoBox">
+          <Logo className="footerLogo" />
+        </div>
+        <FooterNav footerNavData={footerNavData} />
+        <SnsLinks />
       </div>
-      <FooterNav footerNavData={footerNavData} />
-      <SnsLinks />
     </footer>
   );
 }

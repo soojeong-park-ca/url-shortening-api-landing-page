@@ -17,3 +17,14 @@
   text-transform: capitalize;
   cursor: pointer;
 }
+
+/* DESKTOP VERSION from 48em (768px) */
+@media screen and (min-width: 48em) {
+  .navList {
+    align-items: start;
+  }
+
+  .navListItem {
+    text-align: left;
+  }
+}
