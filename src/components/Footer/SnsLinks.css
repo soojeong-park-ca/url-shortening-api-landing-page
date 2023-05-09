@@ -12,3 +12,12 @@
   align-items: center;
   justify-content: center;
 }
+
+/* DESKTOP VERSION from 48em (768px) */
+@media screen and (min-width: 48em) {
+  .snsLinks {
+    margin-top: 0;
+    gap: 1.6rem;
+    justify-content: end;
+  }
+}
