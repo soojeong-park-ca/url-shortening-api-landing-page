@@ -1,0 +1,33 @@
+.feature__card {
+	background-color: #fff;
+	padding: 0 25px 25px;
+	box-sizing: border-box;
+}
+
+.feature__card__image-container {
+	display: grid;
+	place-items: center;
+	width: 65px;
+	height: 65px;
+	background: #3b3054;
+	border-radius: 50%;
+	margin-top: -30px;
+	margin-bottom: 30px;
+}
+
+.feature__card__image {
+	max-width: 50%;
+}
+
+.feature__card__heading {
+	color: #35323e;
+	font-weight: 700;
+}
+
+.feature__card__text {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #9e9aa7;
+	font-weight: 500;
+	line-height: 1.7;
+}
