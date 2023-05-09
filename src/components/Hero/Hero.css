@@ -1,4 +1,4 @@
-.hero {
+.heroBox {
   width: 100%;
   max-width: 64rem;
 
@@ -14,11 +14,11 @@
 
 .heroBgImgBox {
   width: 100%;
-  height: clamp(20rem, 8.55rem + 48.855vw, 32rem);
+  height: 21rem;
 
   background-image: url(../../assets/images/illustration-working.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 30rem;
   background-position: top left;
 
   margin-left: 2rem;
@@ -89,30 +89,55 @@
 @media screen and (max-width: 20em) {
   .heroBgImgBox {
     height: clamp(15rem, 4.286rem + 68.571vw, 18rem);
+    background-size: cover;
   }
 }
 
 /* 500px <= screen width */
 @media screen and (min-width: 31.25em) {
   .heroBgImgBox {
-    margin-left: 5rem;
+    height: 17rem;
+    background-size: 25rem;
+    background-position: top center;
+  }
+
+  .headingPrimary {
+    padding-inline: 3rem;
+  }
+
+  .paragraph {
+    padding-inline: 2.5rem;
   }
 }
 
 /* 624px <= screen width */
 @media screen and (min-width: 39em) {
-  .heroBgImgBox {
-    margin-left: 7rem;
+  .headingPrimary {
+    padding-inline: 7.5rem;
+  }
+
+  .paragraph {
+    padding-inline: 3rem;
   }
 }
 
 /* 768px <= screen width */
 @media screen and (min-width: 48em) {
-  .hero {
+  .heroBox {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2.5rem;
+  }
+
+  .heroBgImgBox {
+    height: 28rem;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+
+    background-size: 135%;
+    background-position: center left;
+    margin-left: 0;
   }
 
   .heroText {
@@ -125,13 +150,9 @@
     padding-right: 0;
   }
 
-  .heroBgImgBox {
-    grid-column: 2 / -1;
-    grid-row: 1 / -1;
-
-    background-size: 135%;
-    background-position: center left;
-    margin-left: 0;
+  .headingPrimary,
+  .paragraph {
+    padding-inline: 0;
   }
 
   .heroText .btnHero {
@@ -141,6 +162,18 @@
 
 /* 1024px <= screen width */
 @media screen and (min-width: 64em) {
+  .hero {
+    background-image: url(../../assets/images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top 75%;
+  }
+
+  .heroBgImgBox {
+    height: 32rem;
+    background-image: none;
+  }
+
   .headingPrimary {
     font-size: 3.5rem;
   }
@@ -154,11 +187,39 @@
 /* 1440px <= screen width */
 @media screen and (min-width: 90em) {
   .hero {
+    background-position: right -15% bottom;
+  }
+
+  .heroBox {
     grid-template-columns: 1.5fr 1fr;
     gap: 0;
   }
 
   .headingPrimary {
     font-size: 4.2rem;
+  }
+}
+
+/* 1552px <= screen width */
+@media screen and (min-width: 97em) {
+  .hero {
+    background-size: 45%;
+    background-position: right -3% bottom;
+  }
+}
+
+/* 1700px <= screen width */
+@media screen and (min-width: 106.25em) {
+  .hero {
+    background-size: 43%;
+    background-position: right bottom;
+  }
+}
+
+/* 1800px <= screen width */
+@media screen and (min-width: 112.5em) {
+  .hero {
+    background-size: 40%;
+    background-position: 93% bottom;
   }
 }
