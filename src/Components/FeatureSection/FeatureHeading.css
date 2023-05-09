@@ -1,0 +1,17 @@
+.feature-heading-box {
+	text-align: center;
+}
+
+.feature__heading {
+	font-size: 2.1875rem;
+	font-weight: 700;
+	color: #35323e;
+}
+
+.feature__text {
+	width: 50%;
+	margin: 7px auto 0;
+	color: #9e9aa7;
+	font-weight: 500;
+	line-height: 1.7;
+}
