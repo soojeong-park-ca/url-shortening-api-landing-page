@@ -1,8 +1,20 @@
+.features__card-container {
+	padding: 80px 0 90px 0;
+}
+
 .feature__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 25px;
-	padding: 80px 0 90px 0;
+	align-items: flex-start;
+}
+
+.feature__cards:nth-child(2) {
+	margin-top: 20px;
+}
+
+.feature__cards:last-child {
+	margin-top: 40px;
 }
 
 @media only screen and (max-width: 1024px) {

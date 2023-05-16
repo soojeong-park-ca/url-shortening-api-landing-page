@@ -3,7 +3,7 @@ import "./FeatureCard.css"
 
 function FeatureCard(props) {
     return (
-        <div className="feature__card">
+        <div key={props.id} className={`feature__card`}>
             <div className="feature__card__image-container">
                 <img className="feature__card__image" src={props.logo} alt={props.heading + "image"} />
             </div>
