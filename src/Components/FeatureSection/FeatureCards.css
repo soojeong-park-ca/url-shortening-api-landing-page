@@ -9,16 +9,18 @@
 	align-items: flex-start;
 }
 
-.feature__cards:nth-child(2) {
-	margin-top: 20px;
-}
-
-.feature__cards:last-child {
-	margin-top: 40px;
-}
-
 @media only screen and (max-width: 1024px) {
 	.feature__cards {
 		margin: 2rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.feature__cards {
+		gap: 65px;
+	}
+
+	.features__card-container {
+		padding: 50px 0;
 	}
 }

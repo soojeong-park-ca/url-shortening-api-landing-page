@@ -1,0 +1,39 @@
+.url {
+	background-color: #3b3054;
+	padding: 25px;
+	border-radius: 6px;
+	margin-top: -100px;
+	margin-bottom: 80px;
+}
+
+/* This css here is just a mark up, so i can finish the rest */
+
+.url input,
+.url button {
+	width: 100%;
+	font-family: "Poppins", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana;
+	border-radius: 6px;
+}
+
+.url input {
+	font-size: 18px;
+	padding: 8px 20px;
+	background: white;
+	border: 2px solid transparent;
+	outline: none;
+	transition: 0.2s;
+	margin-bottom: 20px;
+}
+
+.url button {
+	padding: 10px 30px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #2acfcf;
+	color: white;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	font-size: 16px;
+}
