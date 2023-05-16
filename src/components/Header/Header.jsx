@@ -3,7 +3,7 @@ import Button from "../Button";
 import logoBlack from '../../assets/images/logo-black.svg'
 
 const Header = () => {
-    let Links = [
+    let links = [
         { name: "Features", link: "/" },
         { name: "Pricing", link: "/" },
         { name: "Resources", link: "/" }
@@ -33,7 +33,7 @@ const Header = () => {
                 <div className={`nav-box md:justify-between text-center md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-white md:z-auto z-[-1] left-0 md:pl-0 md:p-0 p-4 md:opacity-100 transition-opacity ${open ? "opacity-100" : "opacity-0"} bg-[#3b3054] md:max-w-6xl max-w-xs w-full rounded-xl md:mt-0 mt-6 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none md:translate-x-0 md:-translate-y-0`}>
                     <ul className="md:flex gap-8 mx-8">
                         {
-                            Links.map((link) => (
+                            links.map((link) => (
                                 <li key={link.name} className="my-4 mx-auto w-fit">
                                     <a href={link.link} className="md:text-gray-400 text-white md:hover:text-gray-900 hover:text-opacity-50 ease-in duration-300 font-bold text-sm">{link.name}</a>
                                 </li>
