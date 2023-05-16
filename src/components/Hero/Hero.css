@@ -1,0 +1,225 @@
+.heroBox {
+  width: 100%;
+  max-width: 64rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  padding-top: 6.5rem;
+  margin: 0 auto;
+  margin-bottom: 5.5rem;
+
+  overflow-x: hidden;
+}
+
+.heroBgImgBox {
+  width: 100%;
+  height: 21rem;
+
+  background-image: url(../../assets/images/illustration-working.svg);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  background-position: top left;
+
+  margin-left: 2rem;
+}
+
+.heroBgImgBox .heroImg {
+  width: 100%;
+  transform: scale(0.65);
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding-top: 2.5rem;
+  padding-inline: 2.5rem;
+}
+
+.headingPrimary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.05px;
+  color: var(--color-gray-4);
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+  color: var(--color-gray-2);
+
+  margin-top: 1rem;
+}
+
+.heroText .btnHero {
+  font-size: 1.25rem;
+
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+}
+
+/* screen width <= 360px */
+@media screen and (max-width: 22.5em) {
+  .heroBgImgBox {
+    margin-left: 1rem;
+  }
+
+  .heroText {
+    padding-top: 1.5rem;
+    padding-inline: 1.5rem;
+  }
+
+  .headingPrimary {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* screen width <= 320px */
+@media screen and (max-width: 20em) {
+  .heroBgImgBox {
+    height: clamp(15rem, 4.286rem + 68.571vw, 18rem);
+    background-size: cover;
+  }
+}
+
+/* 500px <= screen width */
+@media screen and (min-width: 31.25em) {
+  .heroBgImgBox {
+    height: 17rem;
+    background-size: 25rem;
+    background-position: top center;
+  }
+
+  .headingPrimary {
+    padding-inline: 3rem;
+  }
+
+  .paragraph {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* 624px <= screen width */
+@media screen and (min-width: 39em) {
+  .headingPrimary {
+    padding-inline: 7.5rem;
+  }
+
+  .paragraph {
+    padding-inline: 3rem;
+  }
+}
+
+/* 768px <= screen width */
+@media screen and (min-width: 48em) {
+  .heroBox {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .heroBgImgBox {
+    height: 28rem;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+
+    background-size: 135%;
+    background-position: center left;
+    margin-left: 0;
+  }
+
+  .heroText {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    text-align: left;
+    align-items: start;
+
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .headingPrimary,
+  .paragraph {
+    padding-inline: 0;
+  }
+
+  .heroText .btnHero {
+    margin-left: 0;
+  }
+}
+
+/* 1024px <= screen width */
+@media screen and (min-width: 64em) {
+  .hero {
+    background-image: url(../../assets/images/illustration-working.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top 75%;
+  }
+
+  .heroBgImgBox {
+    height: 32rem;
+    background-image: none;
+  }
+
+  .headingPrimary {
+    font-size: 3.5rem;
+  }
+
+  .paragraph {
+    margin-top: 0;
+    padding-right: 5rem;
+  }
+}
+
+/* 1440px <= screen width */
+@media screen and (min-width: 90em) {
+  .hero {
+    background-position: right -15% bottom;
+  }
+
+  .heroBox {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0;
+  }
+
+  .headingPrimary {
+    font-size: 4.2rem;
+  }
+}
+
+/* 1552px <= screen width */
+@media screen and (min-width: 97em) {
+  .hero {
+    background-size: 45%;
+    background-position: right -3% bottom;
+  }
+}
+
+/* 1700px <= screen width */
+@media screen and (min-width: 106.25em) {
+  .hero {
+    background-size: 43%;
+    background-position: right bottom;
+  }
+}
+
+/* 1800px <= screen width */
+@media screen and (min-width: 112.5em) {
+  .hero {
+    background-size: 40%;
+    background-position: 93% bottom;
+  }
+}
