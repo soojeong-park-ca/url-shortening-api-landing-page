@@ -88,3 +88,14 @@
 		margin-top: 0px;
 	}
 }
+
+@media screen and (max-width: 340px) {
+	.feature__card {
+		padding: 0 15px 15px;
+		width: 90%;
+	}
+
+	.feature__card__text {
+		font-size: 0.85em;
+	}
+}

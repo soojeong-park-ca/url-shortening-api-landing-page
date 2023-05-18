@@ -1,3 +1,10 @@
 .feature-section {
 	background-color: #eff0f5;
 }
+
+@media screen and (max-width: 340px) {
+	.feature-section > div {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
