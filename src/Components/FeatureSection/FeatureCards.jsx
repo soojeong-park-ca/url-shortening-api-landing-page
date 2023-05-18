@@ -29,7 +29,7 @@ const cards = [
 function FeatureCards() {
     return (
         <div className="features__card-container">
-            <div className="feature__cards max-w-screen-lg mx-auto">
+            <div className="feature__cards lg:max-w-screen-lg mx-auto">
                 {cards.map(card => {
                     return (
                         <FeatureCard

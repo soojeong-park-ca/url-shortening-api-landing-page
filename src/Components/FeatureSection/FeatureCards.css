@@ -15,7 +15,13 @@
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 764px) {
+	.features__card-container {
+		padding: 50px 0;
+	}
+}
+
+@media only screen and (max-width: 680px) {
 	.feature__cards {
 		gap: 65px;
 	}
