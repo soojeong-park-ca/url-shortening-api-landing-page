@@ -5,7 +5,11 @@
 	position: relative;
 }
 
-@media only screen and (min-width: 1024px) {
+.feature__card:last-child {
+	margin-top: 40px;
+}
+
+@media only screen and (min-width: 970px) {
 	.feature__card {
 		min-height: 240px;
 	}
@@ -58,7 +62,7 @@
 	line-height: 1.7;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 680px) {
 	.feature__card {
 		text-align: center;
 		display: flex;
@@ -78,5 +82,20 @@
 		transform: translateX(-50%);
 		top: -65px;
 		z-index: -10;
+	}
+
+	.feature__card:last-child {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.feature__card {
+		padding: 0 15px 15px;
+		width: 90%;
+	}
+
+	.feature__card__text {
+		font-size: 0.85em;
 	}
 }
